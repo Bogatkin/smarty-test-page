@@ -81,6 +81,13 @@
                 .video-wrpr .container  .header-menu-bottom a:focus {
                         border-color: #e04c02;
                 }
+
+            .video-wrpr .container .header-menu-bottom.sticky{
+                position: fixed;
+                left: 0;
+                top: 20px;
+                padding: 0 0px 0 30px;
+            }
     .overlay.dark-0 {
         background-color: rgba(0, 0, 0, 0.35);
     }    
