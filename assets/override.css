@@ -49,7 +49,9 @@
             .video-wrpr .container  .header-menu-top a {
                     background-color: rgba(224, 76, 2, 0.6);
             }
-                .video-wrpr .container  .header-menu-top a:hover {
+                .video-wrpr .container  .header-menu-top a:hover,
+                .video-wrpr .container  .header-menu-top a:active,
+                .video-wrpr .container  .header-menu-top a:focus, {
                         border-color: #e04c02;
                 }
         .video-wrpr .container .header-panel {
@@ -74,7 +76,9 @@
             .video-wrpr .container  .header-menu-bottom a {
                     background-color: rgba(224, 76, 2, 0.6);
             }
-                .video-wrpr .container  .header-menu-bottom a:hover {
+                .video-wrpr .container  .header-menu-bottom a:hover,
+                .video-wrpr .container  .header-menu-bottom a:active,
+                .video-wrpr .container  .header-menu-bottom a:focus {
                         border-color: #e04c02;
                 }
     .overlay.dark-0 {

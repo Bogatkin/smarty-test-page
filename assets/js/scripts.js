@@ -139,6 +139,7 @@
 				jQuery('#preloader').remove();
 			});
 			wow.init();
+			$('[data-toggle="modal"]').tooltip();
 			// setTimeout(function() {}, 1000); 
 		  
 		});
