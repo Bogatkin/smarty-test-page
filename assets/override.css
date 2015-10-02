@@ -1,6 +1,14 @@
 #preloader img {
     margin: 0 auto;
     display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    position: absolute;
 }
 .video-wrpr{
     background: #ccc;
@@ -20,15 +28,54 @@
         z-index: 0;
     }
         .video-wrpr .section-container-video video {
-            height: 100vh;
+            min-height: 100%;
+            min-width: 100%;
+            position: absolute;
         }
+        
     .video-wrpr .container {
-        position: absolute;
-        top: 50%;
+        position: relative;
+        /*top: 50%;
         left: 50%;
-        transform: translate3d(-50%,-50%,0);
+        transform: translate3d(-50%,-50%,0);*/
         z-index: 1;
+        min-height: 600px;
+        height: 100vh;
     }
+        .video-wrpr .container  .header-menu-top {
+            position: absolute;
+        }
+            .video-wrpr .container  .header-menu-top a {
+                    background-color: rgba(224, 76, 2, 0.6);
+            }
+                .video-wrpr .container  .header-menu-top a:hover {
+                        border-color: #e04c02;
+                }
+        .video-wrpr .container .header-panel {
+            top: 50%;
+            position: absolute;
+            width: 100%;
+            transform: translate3d(0,-50%,0);
+        }
+             .video-wrpr .container .header-panel .btn-primary {
+                background: #e04c02;
+                border-color: #fff;
+            }
+            .video-wrpr .container .header-panel .header-booking-form {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+        .video-wrpr .container .header-menu-bottom {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+            .video-wrpr .container  .header-menu-bottom a {
+                    background-color: rgba(224, 76, 2, 0.6);
+            }
+                .video-wrpr .container  .header-menu-bottom a:hover {
+                        border-color: #e04c02;
+                }
     .overlay.dark-0 {
         background-color: rgba(0, 0, 0, 0.35);
     }    
@@ -91,4 +138,8 @@
 
     border: 2px solid #fff;
     border-radius: 0;
+}
+
+.wow {
+   visibility: hidden;
 }

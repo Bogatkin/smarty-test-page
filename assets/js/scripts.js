@@ -121,6 +121,16 @@
 
 /** Preloader
  **************************************************************** **/
+
+			var wow = new WOW(
+			  {
+			    animateClass: 'animated',
+			    offset:       0,
+			    callback:     function(box) {
+			      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+			    }
+			  }
+			);
 	if(jQuery('#preloader').length > 0) {
 
 		jQuery(window).load(function() {
@@ -128,7 +138,7 @@
 			jQuery('#preloader').fadeOut(1000, function() {
 				jQuery('#preloader').remove();
 			});
-
+			wow.init();
 			// setTimeout(function() {}, 1000); 
 		  
 		});
