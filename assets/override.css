@@ -44,6 +44,7 @@
     }
         .video-wrpr .container  .header-menu-top {
             position: absolute;
+            width: 100%;
         }
             .video-wrpr .container  .header-menu-top a {
                     background-color: rgba(224, 76, 2, 0.6);
