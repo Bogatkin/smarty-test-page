@@ -148,3 +148,6 @@
 .wow {
    visibility: hidden;
 }
+.affix {
+    position: fixed !important;
+}
