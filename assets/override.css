@@ -33,7 +33,7 @@
             position: absolute;
         }
         
-    .video-wrpr .container {
+    .video-wrpr .container-fluid {
         position: relative;
         /*top: 50%;
         left: 50%;
@@ -42,11 +42,11 @@
         min-height: 600px;
         height: 100vh;
     }
-        .video-wrpr .container  .header-menu-top {
+        .video-wrpr .container-fluid  .header-menu-top {
             position: absolute;
             width: 100%;
         }
-            .video-wrpr .container  .header-menu-top a {
+            .video-wrpr .container-fluid  .header-menu-top a {
                     background-color: rgba(224, 76, 2, 0.6);
             }
                 .video-wrpr .container  .header-menu-top a:hover,
@@ -54,39 +54,75 @@
                 .video-wrpr .container  .header-menu-top a:focus, {
                         border-color: #e04c02;
                 }
-        .video-wrpr .container .header-panel {
+        .video-wrpr .container-fluid .header-panel {
             top: 50%;
             position: absolute;
             width: 100%;
             transform: translate3d(0,-50%,0);
         }
-             .video-wrpr .container .header-panel .btn-primary {
+             .video-wrpr .container-fluid .header-panel .btn-primary {
                 background: #e04c02;
                 border-color: #fff;
             }
-            .video-wrpr .container .header-panel .header-booking-form {
+            .video-wrpr .container-fluid .header-panel .header-booking-form {
                 background-color: rgba(0, 0, 0, 0.3);
             }
-        .video-wrpr .container .header-menu-bottom {
+        .video-wrpr .container-fluid .header-menu-bottom {
             position: absolute;
             bottom: 0;
             width: 100%;
             margin-bottom: 30px;
         }
-            .video-wrpr .container  .header-menu-bottom a {
-                    background-color: rgba(224, 76, 2, 0.6);
+            .video-wrpr .container-fluid .header-menu-bottom > div{
+                display: table;
             }
-                .video-wrpr .container  .header-menu-bottom a:hover,
-                .video-wrpr .container  .header-menu-bottom a:active,
-                .video-wrpr .container  .header-menu-bottom a:focus {
-                        border-color: #e04c02;
+            .video-wrpr .container-fluid  .header-menu-bottom ul{
+                display: table-row;
+            }
+            .video-wrpr .container-fluid  .header-menu-bottom li {
+                text-align: center;
+                display: table-cell;
+            }
+                .video-wrpr .container-fluid  .header-menu-bottom a{
+                    -webkit-transition: background-color 0.5s ease-out;
+                    -moz-transition: background-color 0.5s ease-out;
+                    -o-transition: background-color 0.5s ease-out;
+                    transition: background-color 0.5s ease-out;
+                    display: block;
+                }
+                .video-wrpr .container-fluid  .header-menu-bottom a img {
+                    width: 60px;
+                    margin: 0 auto 10px;
+                }
+                .video-wrpr .container-fluid  .header-menu-bottom a .hover-text{
+
+                    -webkit-transition: opacity 0.5s ease-out;
+                    -moz-transition: opacity 0.5s ease-out;
+                    -o-transition: opacity 0.5s ease-out;
+                    transition: opacity 0.5s ease-out;
+
+                    display: block;
+                    opacity: 0;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                }
+                .video-wrpr .container-fluid  .header-menu-bottom a:hover .hover-text{
+                    opacity: 1;
+                    color: #fff;
                 }
 
-            .video-wrpr .container .header-menu-bottom.sticky{
+            .video-wrpr .container-fluid .header-menu-bottom.sticky{
                 position: fixed;
                 left: 0;
                 top: 20px;
                 padding: 0 0px 0 30px;
+            }
+            .video-wrpr .container-fluid .header-menu-bottom.sticky a:hover {
+                background: rgba(255,255,255,0.7);
+            }
+            .video-wrpr .container-fluid .header-menu-bottom.sticky .hover-text{
+                color: #1980B6!important;
             }
     .overlay.dark-0 {
         background-color: rgba(0, 0, 0, 0.35);
@@ -100,13 +136,8 @@
     border-radius: 0;
 }
 .header-menu-bottom a{
-    text-transform: uppercase;
     margin-left: 5px;
     margin-right: 5px;
-    width: 170px;
-
-    border: 2px solid #fff;
-    border-radius: 0;
 }
 .header-title-text{
     color: #fff;
