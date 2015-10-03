@@ -71,7 +71,8 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            margin-bottom: 30px;
+            background: rgba(255,255,255,0.5);
+            padding: 20px 0;
         }
             .video-wrpr .container-fluid .header-menu-bottom > div{
                 display: table;
@@ -96,20 +97,10 @@
                 }
                 .video-wrpr .container-fluid  .header-menu-bottom a .hover-text{
 
-                    -webkit-transition: opacity 0.5s ease-out;
-                    -moz-transition: opacity 0.5s ease-out;
-                    -o-transition: opacity 0.5s ease-out;
-                    transition: opacity 0.5s ease-out;
-
                     display: block;
-                    opacity: 0;
-                    color: #fff;
+                    color: #1980B6;
                     text-transform: uppercase;
                     font-size: 18px;
-                }
-                .video-wrpr .container-fluid  .header-menu-bottom a:hover .hover-text{
-                    opacity: 1;
-                    color: #fff;
                 }
 
             .video-wrpr .container-fluid .header-menu-bottom.sticky{
@@ -146,7 +137,7 @@
 .header-title-text h1{
     color: #fff;
     font-size: 48px;
-    margin-top:45px;
+    margin-top:15px;
     margin-bottom:25px;
 }
 .header-title-text ul{
