@@ -61,11 +61,12 @@
                 background-color: rgba(255,255,255,0.5);
             }
                 .video-wrpr .container-fluid  .header-menu-top .panel.panel--tripadvisor img {
-                    width: 110px;
+                    width: 100%;
                     margin: 10px 0;
                 }
                 .video-wrpr .container-fluid  .header-menu-top .panel.panel--tripadvisor blockquote {
-                    margin: 12px 0;
+                    margin: 10px 0;
+                    font-size: 12px;
                 } 
             .video-wrpr .container-fluid  .header-menu-top .panel.panel--gallery {
 
@@ -83,6 +84,14 @@
                             display: block;
                             float: left;
                         }
+            .video-wrpr .container-fluid  .header-menu-top .logo {
+                display: block;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+                .video-wrpr .container-fluid  .header-menu-top .logo img {
+                    width: 100%;
+                }          
         .video-wrpr .container-fluid .header-panel {
             top: 50%;
             position: absolute;
