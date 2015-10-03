@@ -83,6 +83,7 @@
                             width: 20%;
                             display: block;
                             float: left;
+                            padding: 0 30px;
                         }
             .video-wrpr .container-fluid  .header-menu-top .logo {
                 display: block;
