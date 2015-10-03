@@ -69,7 +69,7 @@
                     font-size: 12px;
                 } 
             .video-wrpr .container-fluid  .header-menu-top .panel.panel--gallery {
-
+                background: transparent;
             } 
                     .video-wrpr .container-fluid  .header-menu-top .panel.panel--gallery .gallery-list {
                         list-style-type: none;
