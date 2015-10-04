@@ -371,3 +371,7 @@
                 color: #000;
                 padding: 15px;
             }
+.activity-desc .btn {
+    border: none;
+    border-radius: 0;
+} 
