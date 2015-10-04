@@ -154,7 +154,14 @@
 		jQuery(window).load(function() {
 
 			video = document.getElementById('video');
-			checkLoad();
+
+			jQuery('#preloader').fadeOut(1000, function() {
+				jQuery('#preloader').remove();
+			});
+			wow.init();
+			$('[data-toggle="modal"]').tooltip();
+
+			//checkLoad();
 		  
 		});
 
