@@ -246,7 +246,9 @@
 
 <div class="overlay-contentscale">
     <button type="button" class="overlay-close">Close</button>
-    <div class="row activity-gallery">
+    <button type="button" class="back">Back</button>
+    <div class="overlay--content">
+        <div class="row activity-gallery">
         <div class="col-xs-12 panel-wrapper">
             <div class="panel">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, voluptatem iure voluptates totam similique ab dicta esse blanditiis iste! Quidem eveniet debitis, illo doloribus dolorum officiis facilis! Eos nihil ipsum libero nostrum, ducimus! Libero, ipsa, aut. Ut inventore culpa iusto, libero neque excepturi, aliquam modi quia possimus veniam quidem ipsam.
@@ -385,16 +387,10 @@
             <h3>Learn to Sail - Discover a whole new way of life</h3>
             <p>&nbsp;</p>
             <p>Our Learn to Sail course is carefully structured as per international sailing standards customized to Indian conditions.</p>
-            
-
-
-
-
-        
-
-            
         </div>
     </div>
+    </div>
+    
 </div>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -481,9 +477,17 @@
         $('.activity-desc').toggle();
         $('.activity-gallery a').on('click', function(event) {
             event.preventDefault();
-            $('.activity-gallery').toggle();
-            $('.activity-desc').toggle();
-            /* Act on the event */
+            $('.activity-gallery').hide();
+            $('.activity-desc').show();
+            $('.back').show();
+            $('.overlay-close').hide();
+        });
+        $('.back').on('click', function(event) {
+            event.preventDefault();
+            $('.activity-gallery').show();
+            $('.activity-desc').hide();
+            $('.back').hide();
+            $('.overlay-close').show();
         });
 
         $('.header-title-text').slick({
