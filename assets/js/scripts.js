@@ -131,7 +131,7 @@ var wow = new WOW(
 		}
 	}
 );
-if(jQuery('#preloader').length > 0) {
+//if(jQuery('#preloader').length > 0) {
 
 	var isPageLoaded = false;
 	var isVideoLoaded = false;
@@ -158,7 +158,7 @@ if(jQuery('#preloader').length > 0) {
 
 	});
 
-}
+//}
 
 
 
