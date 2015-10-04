@@ -56,18 +56,27 @@
                 }
             .video-wrpr .container-fluid  .header-menu-top .panel.panel--tripadvisor{
                 width: 100%;
-                padding: 15px;
+                padding: 0 15px;
                 float: left;
-                background-color: rgba(255,255,255,0.5);
+                background-color: rgba(87, 147, 64, 0.7);
             }
                 .video-wrpr .container-fluid  .header-menu-top .panel.panel--tripadvisor img {
-                    width: 100%;
+                    height: 40px;
                     margin: 10px 0;
                 }
                 .video-wrpr .container-fluid  .header-menu-top .panel.panel--tripadvisor blockquote {
-                    margin: 10px 0;
+                    margin: 10px 0 10px -10px;
                     font-size: 12px;
+                    height: 40px;
                 } 
+                    .video-wrpr .container-fluid  .header-menu-top .panel.panel--tripadvisor blockquote p {
+                        height: 40px;
+                        text-align: left;
+                        vertical-align: middle;
+                        display: table-cell;
+                        color: white;
+                        font-weight: bold;
+                    }
             .video-wrpr .container-fluid  .header-menu-top .panel.panel--gallery {
                 background: transparent;
             } 
@@ -79,19 +88,22 @@
                         margin: 0;
                     }
                         .video-wrpr .container-fluid  .header-menu-top .panel.panel--gallery .gallery-list li {
-                            
-                            width: 20%;
-                            display: block;
-                            float: left;
-                            padding: 0 30px;
+                            display: inline-block;
+                            padding: 0 6px;
+                            height: 62px;
                         }
+                            .video-wrpr .container-fluid  .header-menu-top .panel.panel--gallery .gallery-list li img {
+                                height: 100%;
+                            }
             .video-wrpr .container-fluid  .header-menu-top .logo {
-                display: block;
-                border-radius: 50%;
-                overflow: hidden;
+                display: inline-block;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    height: 62px;
             }
                 .video-wrpr .container-fluid  .header-menu-top .logo img {
-                    width: 100%;
+                    max-width: 100%;
+                    height: 100%;
                 }          
         .video-wrpr .container-fluid .header-panel {
             top: 50%;
