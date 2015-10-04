@@ -375,3 +375,8 @@
     border: none;
     border-radius: 0;
 } 
+.fixed-column{
+    position: fixed;
+    padding-left: 0;
+    padding-right: 0;
+}
