@@ -138,22 +138,9 @@
 
 		var video;
 
-		function checkLoad() {
-			if (video.readyState === 4) {
-				jQuery('#preloader').fadeOut(1000, function() {
-					jQuery('#preloader').remove();
-				});
-				wow.init();
-				$('[data-toggle="modal"]').tooltip();
-			} else {
-				setTimeout(checkLoad, 100);
-			}
-		}
-
 
 		jQuery(window).load(function() {
 
-			video = document.getElementById('video');
 
 			jQuery('#preloader').fadeOut(1000, function() {
 				jQuery('#preloader').remove();
