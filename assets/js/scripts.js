@@ -139,7 +139,9 @@ var wow = new WOW(
 	var video;
 
 	function checkLoad() {
+		console.log(video.readyState)
 		if (video.readyState === 4) {
+			console.log("!!!");
 			jQuery('#preloader').fadeOut(1000, function() {
 				jQuery('#preloader').remove();
 			});
