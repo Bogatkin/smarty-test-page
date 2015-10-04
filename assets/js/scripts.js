@@ -133,16 +133,35 @@
 			);
 	if(jQuery('#preloader').length > 0) {
 
+		var isPageLoaded = false;
+		var isVideoLoaded = false;
+
 		jQuery(window).load(function() {
-			
-			jQuery('#preloader').fadeOut(1000, function() {
-				jQuery('#preloader').remove();
-			});
-			wow.init();
-			$('[data-toggle="modal"]').tooltip();
+			isPageLoaded = true;
+
+			if(isVideoLoaded){
+				jQuery('#preloader').fadeOut(1000, function() {
+					jQuery('#preloader').remove();
+				});
+				wow.init();
+				$('[data-toggle="modal"]').tooltip();
+			}
 			// setTimeout(function() {}, 1000); 
 		  
 		});
+
+
+		var video = document.getElementById('video');
+		video.addEventListener('loadeddata', function() {
+			isVideoLoaded = true;
+			if(isPageLoaded){
+				jQuery('#preloader').fadeOut(1000, function() {
+					jQuery('#preloader').remove();
+				});
+				wow.init();
+				$('[data-toggle="modal"]').tooltip();
+			}
+		}, false);
 
 	}
 
