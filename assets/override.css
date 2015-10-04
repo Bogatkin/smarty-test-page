@@ -232,7 +232,6 @@
 
 .overlay-contentscale img {
     width: 100%;
-    padding: 30px;
 }
 
 /* Overlay closing cross */
@@ -273,7 +272,11 @@
     transition: transform 0.5s, visibility 0s 0.5s;
     overflow-x: hidden;
     overflow-y: scroll;
+    color: #f5f5f5;
 }
+    .overlay-contentscale h3 {
+        color: #f5f5f5;
+    }
 
 .overlay-contentscale.open {
     visibility: visible;
@@ -293,7 +296,10 @@
             position: relative;
             display: block;
 
-        } 
+        }
+            .activity-gallery > div > a > img {
+                padding: 30px;
+            } 
             .activity-gallery > div > a > .desc {
                 position: absolute;
                 bottom: 40px;
