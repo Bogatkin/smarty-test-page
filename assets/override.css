@@ -95,6 +95,7 @@
                         }
                             .video-wrpr .container-fluid  .header-menu-top .panel.panel--gallery .gallery-list li img {
                                 height: 100%;
+                                padding: 1px;
                             }
             .video-wrpr .container-fluid  .header-menu-top .logo {
                 display: inline-block;
